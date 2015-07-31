@@ -1,0 +1,17 @@
+How to use GitHub to synchronize just my Atom Vocola voice commands commands:
+
+- If NaturallySpeaking is running, shut it down
+
+- Rename your current Vocola voice command folder
+- Create a new version of the Vocola voice command folder
+
+- Use the GitHub shell to go to the Vocola voice command folder
+
+- Run the following command, which clones the repo into this folder (if the folder is empty)
+git clone https://github.com/aschneiderman/atom-voice-vocola .
+
+
+- Move all of your Vocola voice command files back into this folder
+
+- Make a small change to atom.vcl, then synchronize it using GitHub for Windows.
+Check in GitHub to make sure that only atom.vcl was synchronized – no other .vcl files should be in the GitHub site
