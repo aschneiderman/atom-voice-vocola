@@ -1,4 +1,4 @@
-# Voice commands for atom
+# Voice commands for atom, a fabulous editor
 
 include folders.vch;
 include letters.vch;
