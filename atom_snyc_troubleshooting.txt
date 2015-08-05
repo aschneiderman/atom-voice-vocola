@@ -1,0 +1,12 @@
+TROUBLESHOOTING
+
+If I edit files on one computer, synchronize with GitHub, but then the changes don't show up on
+GitHub for Windows on another computer, try the following:
+
+- Open GitHub for Windows and click on the repository
+
+- Click on the gear icon in the upper right-hand corner, and choose Open in Git Shell.
+	This will open up a PowerShell with Git ready to go inside the repository's current branch.
+- Type:
+	git pull
+	You should see the names of the files that are synchronized.
