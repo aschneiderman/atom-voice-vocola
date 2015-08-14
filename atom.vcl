@@ -55,10 +55,14 @@ Select between (Delimiters | Brackets) ={Ctrl+m} {Ctrl+Alt+m};
 
 
 # --- Code commands -------------------------------------------
-Start (para = 'p' | Item = 'li' | List = 'ul' | HTML = 'html' | pre = "pre"
-	| Snippet = 'snip' | 'Recipe Row' = 'recipe-row') = $1 {Tab};
+Start (Item = 'li' | List = 'ul' | HTML = 'html' | pre = "pre"
+	| 'Bold ID' = 'bold-id' | 'Input' = 'ds-input-text'
+	| Snippet = 'snip' | 'Recipe Row' = 'recipe-row' | 'Recipe Play' = 'recipe-play') = $1 {Tab};
+Start (para = '<p>' ) = $1;
 Start (Header | Heading) 1..7 = h $2 {Tab}; 
 Mid HREF = '">';
+
+Paste Function = 'function ' {Ctrl+v} ' {' {Enter} {Enter} '};' {Up};
 
 # TO ADD:
 # adding HTML comments, using a snippet
