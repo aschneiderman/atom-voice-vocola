@@ -5,7 +5,7 @@ include letters.vch;
 
 Find (File | Document) = {Ctrl+t};
 Save As = {Ctrl+Shift+s};
-Save and Reload =  {Ctrl+s}  Wait(100) {Alt+Tab} Wait(300);
+Save and Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}")  {Ctrl+r};
 
 <delimiters> := (Quote = '"' | 'Single Quote' = "'" | Comma = ',' | 'Equal Sign' = '=' | Equals = '=' 
 	| Period = '.' | 'Semi-Colon' = ';');
