@@ -3,6 +3,9 @@
 include folders.vch;
 include letters.vch;
 
+Go Strawberry = {Ctrl+Alt+F4};
+Reload Atom = {Shift+Ctrl+Alt+F5};
+
 Find (File | Document) = {Ctrl+t};
 Save As = {Ctrl+Shift+s};
 Save and Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}")  {Ctrl+r};
@@ -34,6 +37,7 @@ Last Window = {Ctrl+Shift+Tab};
 
 
 # --- Editing commands ----------------------------------------
+Select Line = {Ctrl+l};
 Select (Next = 'Down' | Last = 'Up') 1..20 Lines = {Home} {Shift+$1_$2};
 (Join = 'j' | Indent = ']' | Dedent = '[')  That = {Ctrl+$1};
 Move Line (Up | Down) 1..20  = {Ctrl+$1_$2};
@@ -42,13 +46,18 @@ Move Line (Up | Down) 1..20  = {Ctrl+$1_$2};
 
 Delete Word = {Ctrl+Del};
 Delete 1..20 Words = {Ctrl+Del_$1};
+Delete (Back | Last) Word = {Ctrl+Backspace};
+Delete (Back | Last) 1..20 Words = {Ctrl+Backspace_$2};
 (Delete Line | Dede) = {Ctrl+Shift+k};
 Delete 1..20 Lines = {Ctrl+Shift+k_$1};
 (Cut = 'x' | Paste = 'v' | Copy = 'c') That = {Ctrl+$1};
 
+Comment (That | Line) = {Ctrl+/};
+Comment 1..20 Lines = {Home} {Shift+Down_$1} {Ctrl+/};
+
+
 Select between (Delimiters | Brackets) ={Ctrl+m} {Ctrl+Alt+m};
 # TO ADD:
-# Delete back three words
 # delete between next tags
 
 
