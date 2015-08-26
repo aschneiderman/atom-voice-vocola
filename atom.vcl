@@ -4,7 +4,8 @@ include folders.vch;
 include letters.vch;
 
 
-Reload Atom = {Shift+Ctrl+Alt+F5};
+# Reload Atom = {Shift+Ctrl+Alt+F5};
+Reload Atom = {Ctrl+s} Wait(100)  {Shift+Ctrl+Alt+F5};
 
 Find (File | Document) = {Ctrl+t};
 Save As = {Ctrl+Shift+s};
@@ -71,7 +72,8 @@ Delete Tags = {Ctrl+Alt+F4};
 # --- Code commands -------------------------------------------
 Start (Item = 'li' | List = 'ul' | HTML = 'html' | pre = "pre"
 	| 'Bold ID' = 'bold-id' | 'Input' = 'ds-input-text'
-	| Snippet = 'snip' | 'Recipe Row' = 'recipe-row' | 'Recipe Play' = 'recipe-play') = $1 {Tab};
+	| 'Fix Line' = 'fix-current-line' | 'Fix Current Line' = 'fix-current-line'
+	| Snippet = 'my-snippet' | 'Recipe Row' = 'recipe-row' | 'Recipe Play' = 'recipe-play') = $1 {Tab};
 Start (para = '<p>' ) = $1;
 Add (para = 'p') =  '<' $1 '>' {End} '</' $1 '>';
 Replace With (para = 'p') = {Ctrl+Alt+F4} '<' $1 '>' {End} '</' $1 '>';
