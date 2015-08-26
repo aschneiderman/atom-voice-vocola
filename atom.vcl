@@ -63,7 +63,7 @@ Comment (That | Line) = {Ctrl+/};
 Comment 1..20 Lines = {Home} {Shift+Down_$1} {Ctrl+/};
 
 Select between (Delimiters | Brackets) ={Ctrl+m} {Ctrl+Alt+m};
-Delete Tags = {Ctrl+Alt+F4} {Up};
+Delete Tags = {Ctrl+Alt+F4};
 
 
 
@@ -73,12 +73,12 @@ Start (Item = 'li' | List = 'ul' | HTML = 'html' | pre = "pre"
 	| 'Bold ID' = 'bold-id' | 'Input' = 'ds-input-text'
 	| Snippet = 'snip' | 'Recipe Row' = 'recipe-row' | 'Recipe Play' = 'recipe-play') = $1 {Tab};
 Start (para = '<p>' ) = $1;
-Add (para = 'p') = {Home} '<' $1 '>' {End} '</' $1 '>';
-Replace With (para = 'p') = {Home} {Ctrl+Alt+F4}  {Up} {Home} '<' $1 '>' {End} '</' $1 '>';
+Add (para = 'p') =  '<' $1 '>' {End} '</' $1 '>';
+Replace With (para = 'p') = {Ctrl+Alt+F4} '<' $1 '>' {End} '</' $1 '>';
 
 Start (Header | Heading) 1..7 = h $2 {Tab};
-Add (Header | Heading) 1..7 = {Home} '<h' $2 '>' {End} '</h' $2 '>';
-Replace With (Header | Heading) 1..7 = {Home} {Ctrl+Alt+F4}  {Up} {Home} '<h' $2 '>' {End} '</h' $2 '>' {Home};
+Add (Header | Heading) 1..7 =  '<h' $2 '>' {End} '</h' $2 '>';
+Replace With (Header | Heading) 1..7 = {Ctrl+Alt+F4}  '<h' $2 '>' {End} '</h' $2 '>' {Home};
 Mid HREF = '">';
 
 Paste Function = 'function ' {Ctrl+v} ' {' {Enter} {Enter} '};' {Up};
