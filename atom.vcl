@@ -64,6 +64,7 @@ Comment (That | Line) = {Ctrl+/};
 Comment 1..20 Lines = {Home} {Shift+Down_$1} {Ctrl+/};
 
 Select between (Delimiters | Brackets) ={Ctrl+m} {Ctrl+Alt+m};
+
 Delete Tags = {Ctrl+Alt+F4};
 
 
@@ -84,6 +85,8 @@ Replace With (Header | Heading) 1..7 = {Ctrl+Alt+F4}  '<h' $2 '>' {End} '</h' $2
 Mid HREF = '">';
 
 Paste Function = 'function ' {Ctrl+v} ' {' {Enter} {Enter} '};' {Up};
+
+Pre-Format Code =  {Ctrl+Alt+F5};
 
 # TO ADD:
 # adding HTML comments, using a snippet
