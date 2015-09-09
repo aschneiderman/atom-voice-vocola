@@ -10,6 +10,7 @@ Reload Atom = {Ctrl+s} Wait(100)  {Shift+Ctrl+Alt+F5};
 Find (File | Document) = {Ctrl+t};
 Save As = {Ctrl+Shift+s};
 Save and Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}")  {Ctrl+r};
+Save and Really Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}") {Ctrl+Shift+r};
 
 <delimiters> := (Quote = '"' | 'Single Quote' = "'" | Comma = ',' | 'Equal Sign' = '=' | Equals = '=' 
 	| Period = '.' | Colon = ':' | 'Semi-Colon' = ';' | Hyphen = '-' |  Underscore = '_'
