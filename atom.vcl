@@ -3,6 +3,8 @@
 include folders.vch;
 include letters.vch;
 
+Go Strawberry = {Ctrl+Alt+F8};
+
 
 # Reload Atom = {Shift+Ctrl+Alt+F5};
 Reload Atom = {Ctrl+s} Wait(100)  {Shift+Ctrl+Alt+F5};
@@ -13,7 +15,7 @@ Save and Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}")  {Ctrl+r};
 Save and Really Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}") {Ctrl+Shift+r};
 
 <delimiters> := (Quote = '"' | 'Single Quote' = "'" | Comma = ',' | 'Equal Sign' = '=' | Equals = '=' 
-	| Period = '.' | Colon = ':' | 'Semi-Colon' = ';' | Hyphen = '-' |  Underscore = '_'
+	| Period = '.' | Colon = ':' | 'Semi-Colon' = ';' | Hyphen = '-' |  Underscore = '_' | Slash = '/'
 	| Paren = "(" | "Close Paren" = ")"
 	| Bracket = '[' | "Close Bracket" = ']' | Brace = '{' | 'Close Brace' = '}'	);
 
@@ -28,7 +30,7 @@ Insert (Before = 'Left' | After = 'Right') <delimiters> =  {Ctrl+f} $2 {Enter} {
 Insert (Before = 'Left' | After = 'Right') 1..20 <delimiters> =  {Ctrl+f} $3 {Enter} {Esc}   Wait(100) {F3_$2} {Shift+F3} Wait(100) {$1};
 Insert (Before = 'Left' | After = 'Right') Enda <delimiters> = {End} {Ctrl+f} $2 {Enter} {Esc} {Shift+F3}  Wait(100) {$1};
 
-Fine Alpha <letters> = {Ctrl+f} $1 {Enter} {Esc}   Wait(100) {Right};
+Fine Alpha <letters> = {Ctrl+f} $1 {Enter} {Esc}   Wait(100) {Left};
 Insert (Before = 'Left' | After = 'Right') Alpha <letters> =  {Ctrl+f} $2 {Enter} {Esc}   Wait(100) {$1};
 Fine Number 0..9 = {Ctrl+f} $1 {Enter} {Esc} Wait(100) {Right};
 Find Again = {F3} {Right};
