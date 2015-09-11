@@ -6,20 +6,26 @@ include letters.vch;
 Go Strawberry = {Ctrl+Alt+F8};
 
 
-# Reload Atom = {Shift+Ctrl+Alt+F5};
+# Commands for developing Atom: init.config, packages; also for navigating existing packages/commands
 Reload Atom = {Ctrl+s} Wait(100)  {Shift+Ctrl+Alt+F5};
+Command Palette = {Ctrl+Shift+p};
+Keyboard Shortcuts = {Ctrl+.};
 
-Find (File | Document) = {Ctrl+t};
-Save As = {Ctrl+Shift+s};
-Save and Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}")  {Ctrl+r};
+# Commands for developing D3: D3 visualizations, D3 Sandwiches
+Save and Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}")  {Ctrl+r};	
 Save and Really Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}") {Ctrl+Shift+r};
 
+# File commands
+Find (File | Document) = {Ctrl+t};
+Save As = {Ctrl+Shift+s};
+
+
+# --- Navigation commands ------------------------------------
 <delimiters> := (Quote = '"' | 'Single Quote' = "'" | Comma = ',' | 'Equal Sign' = '=' | Equals = '=' 
 	| Period = '.' | Colon = ':' | 'Semi-Colon' = ';' | Hyphen = '-' |  Underscore = '_' | Slash = '/'
 	| Paren = "(" | "Close Paren" = ")"
 	| Bracket = '[' | "Close Bracket" = ']' | Brace = '{' | 'Close Brace' = '}'	);
 
-# --- Navigation commands ------------------------------------
 Line 1..200 = {Ctrl+g} $1 {Enter};
 (Left = 'b' | Right = 'f') Word = {Alt+$1};
 Top = {Ctrl+Home};
@@ -94,5 +100,5 @@ Pre-Format Code =  {Ctrl+Alt+F5};
 # TO ADD:
 # adding HTML comments, using a snippet
 
-Shortcut Keys = {Ctrl+Shift+p};
+
 
