@@ -10,6 +10,8 @@ Go Strawberry = {Ctrl+Alt+F8};
 Reload Atom = {Ctrl+s} Wait(100)  {Shift+Ctrl+Alt+F5};
 Command Palette = {Ctrl+Shift+p};
 Keyboard Shortcuts = {Ctrl+.};
+Run Atom Specs = {Ctrl+Alt+p};
+Show Console = {Ctrl+Alt+i};
 
 # Commands for developing D3: D3 visualizations, D3 Sandwiches
 Save and Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}")  {Ctrl+r};	
@@ -75,6 +77,9 @@ Comment 1..20 Lines = {Home} {Shift+Down_$1} {Ctrl+/};
 Select between (Delimiters | Brackets) ={Ctrl+m} {Ctrl+Alt+m};
 
 Delete Tags = {Ctrl+Alt+F4};
+
+Replace = {Ctrl+f};
+Replace All = {Ctrl+Enter};
 
 
 
