@@ -4,13 +4,15 @@ include folders.vch;
 include letters.vch;
 
 Go Strawberry = {Ctrl+Alt+F8};
+Go Blueberry ={Ctrl+Alt+o};
+Go Banana = {Ctrl+Alt+F7};
 
 
 # Commands for developing Atom: init.config, packages; also for navigating existing packages/commands
 Reload Atom = {Ctrl+s} Wait(100)  {Shift+Ctrl+Alt+F5};
 Command Palette = {Ctrl+Shift+p};
 Keyboard Shortcuts = {Ctrl+.};
-Run Atom Specs = {Ctrl+Alt+p};
+Run Specs = {Ctrl+Alt+p};
 Show Console = {Ctrl+Alt+i};
 
 # Commands for developing D3: D3 visualizations, D3 Sandwiches
