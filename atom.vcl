@@ -27,7 +27,7 @@ Save As = {Ctrl+Shift+s};
 # --- Navigation commands ------------------------------------
 <delimiters> := (Quote = '"' | 'Single Quote' = "'" | Comma = ',' | 'Equal Sign' = '=' | Equals = '=' 
 	| Period = '.' | Colon = ':' | 'Semi-Colon' = ';' | Hyphen = '-' |  Underscore = '_' | Slash = '/'
-	| Paren = "(" | "Close Paren" = ")"
+	| Paren = "(" | "Close Paren" = ")" | Parentheses = "(" | "Close Parentheses" = ")"
 	| Bracket = '[' | "Close Bracket" = ']' | Brace = '{' | 'Close Brace' = '}'	);
 
 Line 1..200 = {Ctrl+g} $1 {Enter};
