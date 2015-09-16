@@ -76,7 +76,7 @@ Delete 1..20 Lines = {Ctrl+Shift+k_$1};
 Comment (That | Line) = {Ctrl+/};
 Comment 1..20 Lines = {Home} {Shift+Down_$1} {Ctrl+/};
 
-Select between (Delimiters | Brackets) ={Ctrl+m} {Ctrl+Alt+m};
+Select between (Delimiters | Brackets | Tags) ={Ctrl+m} {Ctrl+Alt+m};
 
 Delete Tags = {Ctrl+Alt+F4};
 
@@ -88,9 +88,11 @@ Replace All = {Ctrl+Enter};
 
 # --- Code commands -------------------------------------------
 Start (Item = 'li' | List = 'ul' | HTML = 'html' | pre = "pre"
+	| div = 'div' | 'Comment' = 'comment-html'
 	| 'Bold ID' = 'bold-id' | 'Input' = 'ds-input-text'
 	| 'Fix Line' = 'fix-current-line' | 'Fix Current Line' = 'fix-current-line'
 	| Snippet = 'my-snippet' | 'Recipe Row' = 'recipe-row' | 'Recipe Play' = 'recipe-play') = $1 {Tab};
+Stop (Comment = 'comment-html-end' ) = $1 {Tab};
 Start (para = '<p>' ) = $1;
 Add (para = 'p') =  '<' $1 '>' {End} '</' $1 '>';
 Replace With (para = 'p') = {Ctrl+Alt+F4} '<' $1 '>' {End} '</' $1 '>';
