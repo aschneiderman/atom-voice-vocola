@@ -57,7 +57,10 @@ Last Window = {Ctrl+Shift+Tab};
 
 # --- Editing commands ----------------------------------------
 Select Line = {Ctrl+l};
-Select (Next = 'Down' | Last = 'Up') 1..20 Lines = {Home} {Shift+$1_$2};
+Select (Next = 'Down' | Forward = 'Down' | Last = 'Up' | Back = 'Up' | Previous = 'Up') 1..20 Lines = {Home} {Shift+$1_$2};
+Grab 1..20 Lines = {Home} {Shift+Down_$1};
+Add 1..20 (Lines = 'Down' | Line = 'Down' | Pages = 'PgDn' | Page = 'PgDn') = {Shift+$2_$1};
+
 (Join = 'j' | Indent = ']' | Dedent = '[')  That = {Ctrl+$1};
 Move Line (Up | Down) 1..20  = {Ctrl+$1_$2};
 
