@@ -7,6 +7,7 @@ Go Strawberry = {Ctrl+Alt+F8};
 Go Blueberry ={Ctrl+Alt+o};
 Go Banana = {Ctrl+Alt+F7};
 
+Start Far = 'var ';
 
 # Commands for developing Atom: init.config, packages; also for navigating existing packages/commands
 Reload Atom = {Ctrl+s} Wait(100)  {Shift+Ctrl+Alt+F5};
