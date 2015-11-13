@@ -3,17 +3,6 @@
 include folders.vch;
 include letters.vch;
 
-Go Strawberry = {Ctrl+Alt+F8};
-Go Blueberry ={Ctrl+Alt+o};
-Go Banana = {Ctrl+Alt+F7};
-
-# Commands for developing Atom: init.config, packages; also for navigating existing packages/commands
-Reload Atom = {Ctrl+s} Wait(100)  {Shift+Ctrl+Alt+F5};
-Command Palette = {Ctrl+Shift+p};
-Keyboard Shortcuts = {Ctrl+.};
-Run Specs = {Ctrl+Alt+p};
-Show Console = {Ctrl+Alt+i};
-
 # Commands for developing D3: D3 visualizations, D3 Sandwiches
 Save and Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}")  {Ctrl+r};	
 Save and Really Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}") {Ctrl+Shift+r};
@@ -95,6 +84,7 @@ Start (	# HTML commands
 	# D3 Recipe commands
 	| 'Recipe Page' = 'recipe-page' | 'Recipe Row' = 'recipe-row' 
 	| 'Recipe Toy' = 'recipe-toy' | Toy = 'recipe-toy'
+	| 'Bold ID'
 
 	# Coffeescript commands
 	| Snippet = 'my-snippet' 
@@ -113,6 +103,13 @@ Add (para = 'p') =  '<' $1 '>' {End} '</' $1 '>';
 
 # D3 Recipe commands
 Pre-Format Code =  {Ctrl+Alt+F5};
+Reload Atom = {Ctrl+s} Wait(100)  {Shift+Ctrl+Alt+F5};
+Command Palette = {Ctrl+Shift+p};
+Keyboard Shortcuts = {Ctrl+.};
+Run Specs = {Ctrl+Alt+p};
+Show Console = {Ctrl+Alt+i};
+
+
 
 # D3 commands
 Paste Function = 'function ' {Ctrl+v} ' {' {Enter} {Enter} '};' {Up};
