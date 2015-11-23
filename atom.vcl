@@ -15,7 +15,7 @@ Last Window = {Ctrl+Shift+Tab};
 
 
 # --- Text navigation commands ------------------------------------
-<delimiters> := (Quote = '"' | 'Single Quote' = "'" | Comma = ',' | 'Equal Sign' = '=' | Equals = '=' 
+<delimiters> := (Quote = '"' | 'Double Quote' = '"' | 'Single Quote' = "'" | Comma = ',' | 'Equal Sign' = '=' | Equals = '=' 
 	| Period = '.' | Colon = ':' | 'Semi-Colon' = ';' | Hyphen = '-' |  Underscore = '_' | Slash = '/'
 	| Paren = "(" | "Close Paren" = ")" | Parentheses = "(" | "Open Parenthesis" = "(" | "Close Parentheses" = ")"
 	| Bracket = '[' | "Close Bracket" = ']' | Brace = '{' | 'Close Brace' = '}'	);
@@ -86,6 +86,9 @@ Start (	# HTML commands
 	| 'Recipe Toy' = 'recipe-toy' | Toy = 'recipe-toy'
 	| 'Bold ID'
 
+	# D3 and JavaScript commands
+	| Console = 'console' | Log = 'console'
+	| Var = 'variable' | Variable = 'variable'
 	# Coffeescript commands
 	| Snippet = 'my-snippet' 
 	| 'Fix Line' = 'fix-current-line' | 'Fix Current Line' = 'fix-current-line'
