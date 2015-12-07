@@ -12,6 +12,8 @@ Find (File | Document) = {Ctrl+t};
 Save As = {Ctrl+Shift+s};
 Next Window = {Ctrl+Tab};
 Last Window = {Ctrl+Shift+Tab};
+Latest File = {Ctrl+Shift+t};
+(Tree View | List Files) = {Alt+o};	# NOTE: to make this work, I had to create a new keyboard shortcut in Atom (my personal keymap.cson)
 
 
 # --- Text navigation commands ------------------------------------
@@ -45,7 +47,7 @@ Select Line = {Ctrl+l};
 Select (Next = 'Down' | Forward = 'Down' | Last = 'Up' | Back = 'Up' | Previous = 'Up') 1..20 Lines = {Home} {Shift+$1_$2};
 Move Line (Up | Down) 1..20  = {Ctrl+$1_$2};
 Add 1..20 (Lines = 'Down' | Line = 'Down' | Pages = 'PgDn' | Page = 'PgDn') = {Shift+$2_$1};
-
+Start Adding 1..20 Lines = {Home}{Shift+Down_$1};
 
 
 Select between (Delimiters | Brackets | Tags) ={Ctrl+m} {Ctrl+Alt+m};
@@ -60,6 +62,7 @@ Delete 1..20 Words = {Ctrl+Del_$1};
 Delete (Back | Last) Word = {Ctrl+Backspace};
 Delete (Back | Last) 1..20 Words = {Ctrl+Backspace_$2};
 Delete Enda Word = {End} {Ctrl+Backspace};
+Kill Word = {Ctrl+Backspace}{Ctrl+Del};
 
 (Delete Line | Dede) = {Ctrl+Shift+k};
 Delete 1..20 Lines = {Ctrl+Shift+k_$1};
