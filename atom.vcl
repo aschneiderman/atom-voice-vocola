@@ -6,6 +6,7 @@ include letters.vch;
 # Commands for developing D3: D3 visualizations, D3 Sandwiches
 Save and Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}")  {Ctrl+r};	
 Save and Really Reload =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}") {Ctrl+Shift+r};
+Save and Run =  {Ctrl+s}  Wait(100) SendSystemKeys("{Alt+Tab}")  {Up}{Enter};
 
 # File commands
 Find (File | Document) = {Ctrl+t};
