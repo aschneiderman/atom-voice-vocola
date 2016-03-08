@@ -1,5 +1,7 @@
 # Voice commands for atom
 
+Test Command = "This Is a Test Command";
+
 include folders.vch;
 include letters.vch;
 
