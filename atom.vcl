@@ -1,6 +1,6 @@
 # Voice commands for atom
 
-Test Command = "This Is a Test Command";
+Test Command = "This Is a Test Command";  # see if working on laptop
 
 include folders.vch;
 include letters.vch;
