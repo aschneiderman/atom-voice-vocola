@@ -86,6 +86,7 @@ Replace All = {Ctrl+Enter};
 Start (	# HTML commands
 	'HTML page' = 'html' | pre = "pre" | 'Comment' = 'comment-html'
 	| div = 'div' 
+	| 'class example' = 'class-example'		# Used in A Taste of D3
 
 	# D3 Recipe commands
 	| 'Recipe Page' = 'recipe-page' | 'Recipe Row' = 'recipe-row' 
@@ -101,7 +102,7 @@ Start (	# HTML commands
 ) = $1 {Tab};
 
 Stop (	#HTML commands
-	'div comment' = 'comment-div-end' |  Comment = 'comment-html-end' 
+	'div comment' = 'comment-div-end' |  Comment = 'comment-html-end' | 'div' = 'div-end'
 ) = $1 {Tab};
 
 # HTML commands
