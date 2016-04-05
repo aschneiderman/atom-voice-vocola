@@ -106,6 +106,7 @@ Stop (	#HTML commands
 ) = $1 {Tab};
 
 # HTML commands
+Start (Nibs | Non-Blank Space) = '&nbsp;';
 Dot HTML = '.html';
 Start (Header | Heading) 1..7 = h $2 {Tab};
 Add (Header | Heading) 1..7 =  '<h' $2 '>' {End} '</h' $2 '>';
